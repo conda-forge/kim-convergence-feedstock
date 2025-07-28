@@ -7,9 +7,9 @@ Home: https://github.com/openkim/kim-convergence
 
 Package license: LGPL-2.1-or-later
 
-Summary: kim-convergence utility module
+Summary: KIM-CONVERGENCE utility module
 
-kim-convergence utility module.
+KIM-CONVERGENCE utility module.
 The objective is to make it as easy as possible to help in automatic
 equilibration detection & run length control.
 
