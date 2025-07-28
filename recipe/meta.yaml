@@ -14,7 +14,6 @@ build:
   noarch: python
   number: 1
   script:
-    - python setup.py egg_info   # creates _version.py in build dir
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,6 +23,8 @@ requirements:
     - setuptools >=45
     - versioneer >=0.29
     - kim-edn >1.4.0
+    - numpy >1.16
+    - scipy
   run:
     - python >={{ python_min }}
     - kim-edn >1.4.0
