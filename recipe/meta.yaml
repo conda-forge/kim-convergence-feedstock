@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
@@ -20,6 +20,9 @@ requirements:
     - pip
     - versioneer >=0.29
     - kim-edn >1.4.0
+    - numpy >1.16
+    - scipy
+    - joblib
   run:
     - python >={{ python_min }}
     - kim-edn >1.4.0
