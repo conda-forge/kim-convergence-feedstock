@@ -1,5 +1,6 @@
 {% set name = "kim-convergence" %}
 {% set version = "0.0.3" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -11,13 +12,14 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools >=45
     - versioneer >=0.29
     - kim-edn >1.4.0
   run:
