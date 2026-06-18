@@ -1,5 +1,5 @@
 {% set name = "kim-convergence" %}
-{% set version = "0.0.3" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 607ba1ccfc5bd95c15c6d8fdbb1ee2c515b57ab61baa6dbfa3e8adb89d968f0c
+  sha256: b13b626e323a9b35078ea75dcb1e56840d9d54f9d841390ec1369732e210a0f9
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
@@ -38,7 +38,7 @@ test:
 
 about:
   home: https://github.com/openkim/kim-convergence
-  license:  LGPL-2.1-or-later
+  license: LGPL-2.1-or-later
   license_family: LGPL
   license_file: LICENSE
   summary: KIM-CONVERGENCE utility module
